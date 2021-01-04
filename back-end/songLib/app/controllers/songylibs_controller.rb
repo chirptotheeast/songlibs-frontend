@@ -1,4 +1,4 @@
-class SongyLibsController < ApplicationController
+class SongylibsController < ApplicationController
   def index
     songylibs = Songylib.all
     render json: songylibs

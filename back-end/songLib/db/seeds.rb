@@ -10,22 +10,26 @@ User.destroy_all
 SavedSong.destroy_all
 Songylib.destroy_all
 
+puts 'users'
+
+user1 = User.create(username: 'splashing360fornow')
+user2 = User.create(username: 'Rocky Road')
+user3 = User.create(username: 'RamblinCoconut')
+
 puts 'songs'
 
 song1 = Song.create(name: 'Funny Saloon', topic: 'funny', lyrics: '', music: '')
-song2 = Song.create(name: '', topic: '', lyrics: '', music: '' )
-song3 = Song.create(name: 'Funny Saloon', topic: 'funny', lyrics: '', music: '')    )
-
-puts 'users'
-
-user1 = User.create()
-user2 = User.create()
-user3 = User.create()
+song2 = Song.create(name: 'Grand Muir Tree', topic: 'nature', lyrics: '', music: '' )
+song3 = Song.create(name: 'Love Boat', topic: 'romance', lyrics: '', music: '')    
 
 puts 'songy libs'
 
-songylib1 = Songylib.create()
-songyLib2 = Songylib.create()
-songyLib3 = Songylib.create()
+songylib1 = Songylib.create(name: 'Fill in the Blank Saloon', user_input: '', song_id: song1.id, user_id: user1.id)
+songylib2 = Songylib.create(name: 'Fill up the Grand Muir Tree', user_input: '', song_id: song2.id, user_id: user1.id)
+songylib3 = Songylib.create(name: 'Fill up the my Blank Love Boat', user_input: '', song_id: song3.id, user_id: user1.id)
 
-puts 'saved songs'
+
+
+
+
+##puts 'saved songs'
