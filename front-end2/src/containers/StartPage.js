@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import logo from "../images/orange.png";
 
 export default class StartPage extends Component {
     render() {
         return (
           <div>
-            <img src={require("../images/songlibsbg.png")} alt="logo" />I am the
-            div monster
+            <div>
+              <img src={logo} alt="logo" />
+            </div>
+
             <Link to="/topics">
-              <button className="button">Click to Start</button>
+              <button className="button">click to start</button>
             </Link>
           </div>
         );

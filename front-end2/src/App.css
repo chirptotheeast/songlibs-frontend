@@ -2,16 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #ffeaa7;
@@ -24,18 +15,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .rcorners1 {
@@ -46,6 +26,23 @@
   height: 600px;
   overflow: auto;
   box-shadow: 5px 10px 8px #888888;
+}
+
+
+.double:after {
+    border-bottom: 2px solid rgb(99, 211, 96);
+    -webkit-box-shadow: 0 4px 0 0 red;
+    -moz-box-shadow: 0 4px 0 0 rgb(255, 196, 0);
+    box-shadow: 0 3px 0 0 red;
+    content: "";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 0;
+    right: 0;
+    width: 95%;
+    z-index: -1;
+    transform: translateY(calc(-50% + 3px));
 }
 
 .centered {
@@ -60,13 +57,41 @@
   padding: 60px
 }
 
+
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+  padding: 15px 25px;
+  font-size: 24px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: DejaVu Sans Mono, monospace;
+  font-size: 20px;
+  margin: 3px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px rgb(235, 231, 202);
+  transform: translateY(4px);
+}
+
+h1 {
+  font-family: DejaVu Sans Mono, monospace;
+  font-size: 45px;
+  color:#ffeaa7;
+}
+
+.vertical {
+  margin-top: 75px;
+}
+
+.vertbottom {
+  margin-bottom: 50px;
 }
