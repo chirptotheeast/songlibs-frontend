@@ -19,6 +19,11 @@ export default class Topics extends Component {
                 );
               })}
             </div>
+            <div >
+                <Link to="/">
+                    <button className="btn vertical">go back</button>
+                </Link>
+            </div>
           </div>
         );
     }

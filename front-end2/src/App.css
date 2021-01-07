@@ -68,7 +68,7 @@
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 4.5px #999;
   font-family: DejaVu Sans Mono, monospace;
   font-size: 20px;
   margin: 3px;
@@ -82,9 +82,26 @@
   transform: translateY(4px);
 }
 
+.btn {
+  height: 80px;
+  line-height: 80px;  
+  width: 80px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #A6C2ED;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: DejaVu Sans Mono, monospace;
+  box-shadow: 0 3px rgb(243, 219, 191);
+}
+.btn:hover {background-color: #92a3ec}
+
 h1 {
   font-family: DejaVu Sans Mono, monospace;
-  font-size: 45px;
+  font-size: 35px;
   color:#ffeaa7;
 }
 
