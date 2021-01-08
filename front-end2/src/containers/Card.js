@@ -3,15 +3,17 @@ import {Route} from 'react-router-dom'
 import StartPage from './StartPage.js'
 import Topics from './Topics.js'
 import Form from './Form.js'
+import Reveal from './Reveal.js'
+import Cardflip from './Cardflip.js'
+import Songlib from './Songlib.js'
 
 const songurls = "http://localhost:3000/songs";
-const user = "http://localhost:3000/users/4";
+const user = "http://localhost:3000/users/10";
 
 class Card extends Component {
   state = {
     user: [],
     songs: [],
-    userInput: ["We’re going Up up up in my ___Up in the ___ we’ll greet the ___ Up up up we’ll dance and sway in my ___", "Higher and higher we’re reaching for the ___	Higher and higher come on lets have some ___", "We’re going Up up up in my ___ Up in the ___we’ll greet the ___ Up up up we’ll dance and sway in my ___ ", "Higher and higher we’re reaching for the ___	Higher and higher come on lets have some ___ ", "Lala la ___ , lala ___ love ___ Lala la ___ , lala ___ love ___ ___ !"]
   };
 
   async componentDidMount() {
@@ -51,6 +53,9 @@ class Card extends Component {
               return song ? <Form song={song} /> : null;
             }}
           />
+          <Route exact path="/reveal" render={() => <Reveal />} />
+          <Route exact path="/cardflip" render={() => <Cardflip />} />
+          <Route exact path="/songlib" render={() => <Songlib />} />
         </div>
       </div>
     );

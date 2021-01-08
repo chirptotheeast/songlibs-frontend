@@ -102,6 +102,24 @@
 }
 .btn:hover {background-color: #92a3ec}
 
+
+.btnreveal {
+  height: 50px;
+  line-height: 50px;  
+  width: 50px;  
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #A6C2ED;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: DejaVu Sans Mono, monospace;
+  box-shadow: 0 3px rgb(243, 219, 191);
+}
+.btnreveal:hover {background-color: #92a3ec}
+
 h1 {
   font-family: DejaVu Sans Mono, monospace;
   font-size: 35px;
@@ -112,6 +130,18 @@ h1 {
   margin-top: 75px;
 }
 
+.morevert {
+  margin-top: 125px;
+}
+
 .vertbottom {
   margin-bottom: 50px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+p {
+   font-family: DejaVu Sans Mono, monospace;
 }
