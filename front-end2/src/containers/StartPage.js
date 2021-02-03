@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import logo from "../images/orange.png";
 
+
 export default class StartPage extends Component {
     render() {
         return (

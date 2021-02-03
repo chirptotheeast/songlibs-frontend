@@ -23,4 +23,5 @@ class UsersController < ApplicationController
     }
     render json: User.find(params[:id]).to_json(options)
   end
+
 end

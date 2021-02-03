@@ -145,3 +145,10 @@ h1 {
 p {
    font-family: DejaVu Sans Mono, monospace;
 }
+
+
+
+.container-images{
+  margin: 0 auto;
+  width: 100%;
+}

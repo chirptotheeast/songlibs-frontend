@@ -9,11 +9,13 @@ import Songlib from './Songlib.js'
 
 const songurls = "http://localhost:3000/songs";
 const user = "http://localhost:3000/users/10";
+const songlibs = "http://localhost:3000/songylibs";
 
 class Card extends Component {
   state = {
     user: [],
     songs: [],
+    songlibs: []
   };
 
   async componentDidMount() {
@@ -26,6 +28,12 @@ class Card extends Component {
     const userData = await userResponse.json();
     //console.log(userData);
     this.setState({ user: userData });
+
+
+    const songlibResponse = await fetch(songlibs);
+    const songlibData = await songlibResponse.json();
+    //console.log(userData);
+    this.setState({ songlibs: songlibData });
   }
 
   render() {
@@ -55,7 +63,7 @@ class Card extends Component {
           />
           <Route exact path="/reveal" render={() => <Reveal />} />
           <Route exact path="/cardflip" render={() => <Cardflip />} />
-          <Route exact path="/songlib" render={() => <Songlib />} />
+          <Route exact path="/songlib" render={() =>  <Songlib songlibs={this.state.songlibs}/> } /> 
         </div>
       </div>
     );
